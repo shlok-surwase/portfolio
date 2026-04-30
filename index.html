@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shlok Surwase — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <!-- Fallback fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body class="dark-mode">
+
+  <!-- ░░ NOISE OVERLAY ░░ -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ░░ CURSOR ░░ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo nav-scroll">SS</a>
+      <ul class="nav-links">
+        <li><a href="#home"         class="nav-link nav-scroll active">Home</a></li>
+        <li><a href="#about"        class="nav-link nav-scroll">About</a></li>
+        <li><a href="#achievements" class="nav-link nav-scroll">Achievements</a></li>
+        <li><a href="#projects"     class="nav-link nav-scroll">Projects</a></li>
+        <li><a href="#gallery"      class="nav-link nav-scroll">Gallery</a></li>
+        <li><a href="#contact"      class="nav-link nav-scroll">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">
+        <span class="toggle-icon">☀</span>
+      </button>
+      <button class="nav-burger" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home"         class="mob-link nav-scroll">Home</a>
+      <a href="#about"        class="mob-link nav-scroll">About</a>
+      <a href="#achievements" class="mob-link nav-scroll">Achievements</a>
+      <a href="#projects"     class="mob-link nav-scroll">Projects</a>
+      <a href="#gallery"      class="mob-link nav-scroll">Gallery</a>
+      <a href="#contact"      class="mob-link nav-scroll">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════
+       HOME
+  ════════════════════════════════ -->
+  <section class="section" id="home">
+    <div class="home-bg">
+      <div class="home-orb orb-1"></div>
+      <div class="home-orb orb-2"></div>
+    </div>
+    <div class="home-layout">
+      <div class="home-text">
+        <p class="home-eyebrow reveal">
+          <span class="eyebrow-line"></span>
+          Available for Internships
+        </p>
+        <h1 class="home-name reveal">
+          <span>Shlok</span>
+          <span class="name-accent">Surwase</span>
+        </h1>
+        <p class="home-tagline reveal">
+          BBA Student &nbsp;·&nbsp; Aspiring Data Analyst &nbsp;·&nbsp; Future Product Manager
+        </p>
+        <p class="home-intro reveal">
+          I am a BBA student with a strong interest in data analytics, product management,
+          and the fintech industry — building practical skills through real projects and
+          continuous learning.
+        </p>
+        <div class="home-btns reveal">
+          <a href="#projects" class="btn-main nav-scroll">View My Work</a>
+          <a href="#contact"  class="btn-outline nav-scroll">Get In Touch</a>
+        </div>
+        <div class="home-socials reveal">
+          <a href="https://github.com/shlok-surwase" target="_blank" class="social-link" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/shlok-surwase-914209380" target="_blank" class="social-link" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:surwaseshlok@gmail.com" class="social-link" title="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="home-photo-col reveal">
+        <div class="photo-frame">
+          <div class="photo-glow"></div>
+          <img src="images/profile.jpg" alt="Shlok Surwase" class="profile-photo" />
+          <div class="photo-badge">
+            <span class="badge-dot"></span>
+            Open to opportunities
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-wheel"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       ABOUT
+  ════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="section-label reveal">01 — About Me</div>
+    <div class="about-layout">
+      <div class="about-left">
+        <h2 class="section-heading reveal">
+          Who I <em>Am</em>
+        </h2>
+        <p class="about-para reveal">
+          I am currently pursuing a <strong>Bachelor of Business Administration (BBA)</strong>
+          at MIT Vishwaprayag University. I have a keen interest in understanding how
+          businesses operate and how data can be used to make better decisions.
+        </p>
+        <p class="about-para reveal">
+          I am actively exploring the fields of <strong>data analytics, product management,
+          and fintech</strong>, and I enjoy working on projects that help me gain practical
+          knowledge. I am committed to continuous learning and aim to build a strong career
+          in a data-driven and technology-focused business environment.
+        </p>
+
+        <!-- Education -->
+        <div class="edu-block reveal">
+          <h3 class="block-title">Education</h3>
+          <div class="edu-item">
+            <div class="edu-icon">🎓</div>
+            <div>
+              <div class="edu-degree">Bachelor of Business Administration (BBA)</div>
+              <div class="edu-school">MIT Vishwaprayag University · Currently Pursuing</div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-icon">📚</div>
+            <div>
+              <div class="edu-degree">Higher Secondary Education (12th)</div>
+              <div class="edu-school">Completed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <!-- Interests -->
+        <div class="card-block reveal">
+          <h3 class="block-title">Interests & Hobbies</h3>
+          <div class="tags-wrap">
+            <span class="tag">🏓 Table Tennis</span>
+            <span class="tag">🌿 Nature</span>
+            <span class="tag">♟ Strategy Games</span>
+            <span class="tag">📊 Data Analytics</span>
+            <span class="tag">💼 Product Management</span>
+            <span class="tag">💡 Continuous Learning</span>
+            <span class="tag">🏅 Sports</span>
+            <span class="tag">🌐 Fintech</span>
+          </div>
+        </div>
+
+        <!-- Goals -->
+        <div class="card-block reveal">
+          <h3 class="block-title">Goals</h3>
+          <ul class="goals-list">
+            <li><span class="goal-arrow">→</span> Build strong skills in data analytics and product management</li>
+            <li><span class="goal-arrow">→</span> Gain practical experience through projects and internships</li>
+            <li><span class="goal-arrow">→</span> Specialize in fintech and data-driven business solutions</li>
+            <li><span class="goal-arrow">→</span> Solve real-world problems using data</li>
+            <li><span class="goal-arrow">→</span> Grow into a product manager or business leader</li>
+          </ul>
+        </div>
+
+        <!-- Strengths -->
+        <div class="card-block reveal">
+          <h3 class="block-title">Strengths</h3>
+          <div class="strengths-grid">
+            <div class="strength-item">
+              <span class="str-icon">🧠</span>
+              <span>Analytical Thinking</span>
+            </div>
+            <div class="strength-item">
+              <span class="str-icon">⚡</span>
+              <span>Quick Learner</span>
+            </div>
+            <div class="strength-item">
+              <span class="str-icon">🔧</span>
+              <span>Problem Solving</span>
+            </div>
+            <div class="strength-item">
+              <span class="str-icon">🔄</span>
+              <span>Adaptability</span>
+            </div>
+            <div class="strength-item">
+              <span class="str-icon">🔍</span>
+              <span>Curiosity</span>
+            </div>
+            <div class="strength-item">
+              <span class="str-icon">📈</span>
+              <span>Growth Mindset</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       ACHIEVEMENTS
+  ════════════════════════════════ -->
+  <section class="section" id="achievements">
+    <div class="section-label reveal">02 — Achievements</div>
+    <h2 class="section-heading centered reveal">Certificates &amp; <em>Awards</em></h2>
+    <p class="section-sub reveal">A collection of certifications and recognitions earned through learning and participation.</p>
+
+    <div class="cert-grid">
+
+      <div class="cert-card reveal">
+        <div class="cert-img-wrap">
+          <img src="images/cert-cisco.jpg" alt="Cisco Netacad Certificate" class="cert-img" />
+          <div class="cert-overlay">
+            <a href="images/cert-cisco.jpg" target="_blank" class="cert-view-btn">View Certificate</a>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-badge netacad">Netacad · Cisco</div>
+          <h3 class="cert-title">Introduction to Modern AI</h3>
+          <p class="cert-desc">Awarded by MIT Vishwaprayag University through the Cisco Networking Academy program for successfully completing the Introduction to Modern AI course.</p>
+          <div class="cert-meta">
+            <span>📅 16 Feb 2026</span>
+            <span>🏛 MITVPU</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-img-wrap">
+          <img src="images/cert-coursera.jpg" alt="Coursera Certificate" class="cert-img" />
+          <div class="cert-overlay">
+            <a href="images/cert-coursera.jpg" target="_blank" class="cert-view-btn">View Certificate</a>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-badge coursera">Coursera · IESE</div>
+          <h3 class="cert-title">Organizational Behavior: How to Manage People</h3>
+          <p class="cert-desc">Successfully completed this online course authorized by IESE Business School, University of Navarra, covering organizational behavior and people management strategies.</p>
+          <div class="cert-meta">
+            <span>📅 Dec 7, 2025</span>
+            <span>🔗 <a href="https://coursera.org/verify/BQB0VTVA6QS9" target="_blank">Verify</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-img-wrap">
+          <img src="images/cert-disha.jpg" alt="Disha Computer Institute Certificate" class="cert-img" />
+          <div class="cert-overlay">
+            <a href="images/cert-disha.jpg" target="_blank" class="cert-view-btn">View Certificate</a>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-badge disha">Disha Institute</div>
+          <h3 class="cert-title">Computer Hardware Concepts Workshop</h3>
+          <p class="cert-desc">Certificate of Participation awarded for attending the Computer Hardware Concepts Workshop organized by Disha Computer Institute, Solapur Branch.</p>
+          <div class="cert-meta">
+            <span>🏛 Disha Computer Institute</span>
+            <span>📍 Solapur</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       PROJECTS
+  ════════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="section-label reveal">03 — Projects</div>
+    <h2 class="section-heading centered reveal">Things I've <em>Built</em></h2>
+    <p class="section-sub reveal">Real projects built with real purpose.</p>
+
+    <div class="projects-grid">
+
+      <!-- RoseAI -->
+      <div class="project-card featured reveal">
+        <div class="project-img-wrap">
+          <img src="images/project-roseai.jpg" alt="RoseAI Project" class="project-img" />
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://shlok-surwase.github.io/Rose-AI/" target="_blank" class="proj-btn">Live Demo</a>
+              <a href="https://github.com/shlok-surwase/Rose-AI" target="_blank" class="proj-btn proj-btn-ghost">GitHub</a>
+            </div>
+          </div>
+          <div class="project-tag">AI4A Project</div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">RoseAI — Plant Disease Detector</h3>
+          <p class="project-desc">An AI-powered web application that detects diseases in rose plants from a single leaf photo. Built using Google Teachable Machine and TensorFlow.js, it identifies conditions like Black Spot, Downy Mildew, Rose Rust, and Rose Sawfly — providing cause and treatment advice in simple, friendly language. No gardening expertise required.</p>
+          <div class="project-tech">
+            <span>TensorFlow.js</span>
+            <span>Teachable Machine</span>
+            <span>GSAP</span>
+            <span>JavaScript</span>
+            <span>HTML/CSS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Velocity Arena -->
+      <div class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="images/project-velocity.jpg" alt="Velocity Arena Project" class="project-img" />
+          <div class="project-overlay">
+            <div class="project-links">
+              <a href="https://shlok-surwase.github.io/velocity-arena0/" target="_blank" class="proj-btn">Live Demo</a>
+              <a href="https://github.com/shlok-surwase/velocity-arena0" target="_blank" class="proj-btn proj-btn-ghost">GitHub</a>
+            </div>
+          </div>
+          <div class="project-tag">Web Project</div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Velocity Arena</h3>
+          <p class="project-desc">A fast-paced browser-based game built with pure HTML, CSS, and JavaScript. Velocity Arena demonstrates interactive game mechanics, real-time rendering, and responsive controls — all without any external game engines or frameworks.</p>
+          <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Canvas API</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       GALLERY
+  ════════════════════════════════ -->
+  <section class="section" id="gallery">
+    <div class="section-label reveal">04 — Gallery</div>
+    <h2 class="section-heading centered reveal">Photos &amp; <em>Certificates</em></h2>
+    <p class="section-sub reveal">A visual collection of moments and milestones.</p>
+
+    <!-- Filter buttons -->
+    <div class="gallery-filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="photo">Photos</button>
+      <button class="filter-btn" data-filter="cert">Certificates</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item" data-cat="photo">
+        <img src="images/profile.jpg" alt="Shlok Surwase" />
+        <div class="gallery-hover">
+          <span>Profile Photo</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="photo">
+        <img src="images/profile2.jpg" alt="Shlok Surwase" />
+        <div class="gallery-hover">
+          <span>Professional Photo</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="cert">
+        <img src="images/cert-cisco.jpg" alt="Cisco Certificate" />
+        <div class="gallery-hover">
+          <span>Cisco Netacad · Modern AI</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="cert">
+        <img src="images/cert-coursera.jpg" alt="Coursera Certificate" />
+        <div class="gallery-hover">
+          <span>Coursera · IESE</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="cert">
+        <img src="images/cert-disha.jpg" alt="Disha Certificate" />
+        <div class="gallery-hover">
+          <span>Disha Institute</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="photo">
+        <img src="images/project-roseai.jpg" alt="RoseAI Project" />
+        <div class="gallery-hover">
+          <span>RoseAI Project</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       CONTACT
+  ════════════════════════════════ -->
+  <section class="section" id="contact">
+    <div class="section-label reveal">05 — Contact</div>
+    <h2 class="section-heading centered reveal">Let's <em>Connect</em></h2>
+    <p class="section-sub reveal">I am always open to new opportunities, collaborations, and conversations.</p>
+
+    <div class="contact-layout">
+      <div class="contact-links reveal">
+        <a href="mailto:surwaseshlok@gmail.com" class="contact-card" target="_blank">
+          <div class="cc-icon">✉</div>
+          <div class="cc-text">
+            <div class="cc-label">Email</div>
+            <div class="cc-val">surwaseshlok@gmail.com</div>
+          </div>
+          <div class="cc-arrow">→</div>
+        </a>
+        <a href="https://www.linkedin.com/in/shlok-surwase-914209380" class="contact-card" target="_blank">
+          <div class="cc-icon">in</div>
+          <div class="cc-text">
+            <div class="cc-label">LinkedIn</div>
+            <div class="cc-val">Shlok Surwase</div>
+          </div>
+          <div class="cc-arrow">→</div>
+        </a>
+        <a href="https://github.com/shlok-surwase" class="contact-card" target="_blank">
+          <div class="cc-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </div>
+          <div class="cc-text">
+            <div class="cc-label">GitHub</div>
+            <div class="cc-val">shlok-surwase</div>
+          </div>
+          <div class="cc-arrow">→</div>
+        </a>
+      </div>
+
+      <div class="contact-form-col reveal">
+        <form class="contact-form" id="contactForm">
+          <div class="cf-group">
+            <label>Name</label>
+            <input type="text" placeholder="Your name" required />
+          </div>
+          <div class="cf-group">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com" required />
+          </div>
+          <div class="cf-group">
+            <label>Message</label>
+            <textarea placeholder="What would you like to say?" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-main full-w">Send Message →</button>
+          <div class="form-success" id="formSuccess" style="display:none">
+            ✓ Message sent! I will get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-name">Shlok Surwase</p>
+      <p class="footer-copy">Designed &amp; Built with ♥ · BBA Student at MITVPU · 2026</p>
+      <div class="footer-links">
+        <a href="https://github.com/shlok-surwase" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/shlok-surwase-914209380" target="_blank">LinkedIn</a>
+        <a href="mailto:surwaseshlok@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
